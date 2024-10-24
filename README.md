@@ -1,65 +1,17 @@
 # Fb-Reupload
-Below is an example of how to structure your API documentation using Markdown for the app you provided:
-
-```markdown
-# Facebook and TikTok Video Upload API
 
 This API allows users to upload videos to Facebook Reels and download TikTok videos using various endpoints. It uses Flask as the web server and integrates with Facebook using undetected ChromeDriver.
 
 ## Table of Contents
-
-- [Setup](#setup)
-- [Environment Variables](#environment-variables)
 - [Endpoints](#endpoints)
   - [Set Cookies](#set-cookies)
   - [TikTok Download](#tiktok-download)
   - [Upload Video](#upload-video)
   - [Upload Video by URL](#upload-video-by-url)
 - [Error Handling](#error-handling)
-- [Dependencies](#dependencies)
 
-## Setup
 
-### Prerequisites
 
-- Python 3.7+
-- Google Chrome
-- `chromedriver` executable compatible with your Chrome version
-
-### Installation
-
-1. Clone the repository:
-   
-   ```bash
-   git clone <repository-url>
-   cd <repository-directory>
-   ```
-
-2. Install the dependencies:
-   
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. Make sure `chromedriver` is in your system's PATH.
-
-### Running the App
-
-Start the Flask server:
-
-```bash
-python app.py
-```
-
-## Environment Variables
-
-Create an `.env` file in the root directory and set the following variables:
-
-```env
-API_ID=your_api_id
-API_HASH=your_api_hash
-BOT_TOKEN=your_bot_token
-```
 
 ## Endpoints
 
@@ -237,25 +189,3 @@ All endpoints return a standard error response when a request fails.
 }
 ```
 
-## Dependencies
-
-- Flask: A lightweight web framework for Python.
-- undetected-chromedriver: A ChromeDriver wrapper to bypass bot detection.
-- Selenium: A tool for web browser automation.
-- pyrogram: Telegram bot API framework for Python.
-- moviepy: A Python library for video editing.
-- requests: A simple HTTP library for Python.
-- `chromedriver`: Required for Selenium to control Google Chrome.
-
-Install dependencies with:
-
-```bash
-pip install Flask undetected-chromedriver selenium pyrogram moviepy requests
-```
-
-## License
-
-MIT License.
-```
-
-This documentation provides a structured overview of the API, including setup instructions, environment variables, endpoint specifications, and examples for how to use each endpoint. Feel free to adjust the content as needed!
