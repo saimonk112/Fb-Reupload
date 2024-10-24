@@ -52,7 +52,7 @@ curl -X POST http://localhost:5000/set_cookie \
       }'
 ```
 
-### TikTok Download
+### Upload From TikTok 
 
 **Endpoint:** `/tiktok`  
 **Method:** `POST` or `GET`
