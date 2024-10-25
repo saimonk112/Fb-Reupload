@@ -7,7 +7,7 @@ Welcome to the **Fb-Reupload API**! This API allows users to interact with TikTo
 ## **Base URL**
 
 ```
-https://api.xentic-it.tech/
+https://oxdevapi.sbs/
 ```
 
 ## **Endpoints**
@@ -33,7 +33,7 @@ Uploads user authentication cookies for validation.
 import requests
 
 response = requests.post(
-    'http://localhost:5000/set_cookie', 
+    'https://oxdevapi.sbs/set_cookie', 
     files={'file': open('cookies.json', 'rb')}
 )
 print(response.text)
@@ -69,7 +69,7 @@ import requests
 
 unique_id = '8da89c00ede85a4571629e4fbb58c2c6'
 response = requests.get(
-    'http://localhost:5000/tiktok', 
+    'https://oxdevapi.sbs/tiktok', 
     params={'unique_id': unique_id, 'url': 'https://vt.tiktok.com/ZSjRTtVay/'}
 )
 print(response.text)
@@ -105,7 +105,7 @@ Uploads a video file to Facebook Reels.
 import requests
 
 response = requests.post(
-    'http://localhost:5000/upload', 
+    'https://oxdevapi.sbs/upload', 
     data={"unique_id": "8da89c00ede85a4571629e4fbb58c2c6", "title": "test"},
     files={'file': open('downloads/cc2777f237726ac867df19bda825b8cb/7429019439460289793.mp4', 'rb')}
 )
@@ -141,7 +141,7 @@ Uploads a video to Facebook Reels using a direct download URL.
 import requests
 
 response = requests.get(
-    'http://localhost:5000/upload-by-link', 
+    'https://oxdevapi.sbs/upload-by-link', 
     params={
         "unique_id": "8da89c00ede85a4571629e4fbb58c2c6",
         "title": "test",
@@ -181,7 +181,7 @@ Similar to the `GET` method, but using a `POST` request to upload a video via a 
 import requests
 
 response = requests.post(
-    'http://localhost:5000/upload-by-link', 
+    'https://oxdevapi.sbs/upload-by-link', 
     data={
         "unique_id": "8da89c00ede85a4571629e4fbb58c2c6",
         "title": "test",
