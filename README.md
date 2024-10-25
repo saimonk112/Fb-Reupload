@@ -2,8 +2,7 @@
 
 # Fb-Reupload API Documentation
 
-Welcome to the **Fb-Reupload API**! This API allows users to interact with TikTok videos, upload them to Facebook Reels, and perform related operations using Flask and an undetected ChromeDriver. Below is a detailed guide for making requests to the API.
-
+Welcome to the **Fb-Reupload API**! This API allows users to interact with TikTok videos, upload them to Facebook Reels,
 ## **Base URL**
 
 ```
